@@ -16,25 +16,25 @@ export default function AddForm(){
     return(
         <Form onSubmit={handleSubmit}>
             <Form.Group>
-                <Form.Label>Item Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter item name" />
+                <Form.Label>Book Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter book name" />
                 <Form.Text className="text-muted">
-                What would you like to add today, make it fun ...
+                What would you like to read?
                 </Form.Text>
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Owner</Form.Label>
-                <Form.Control type="text" placeholder="Who is the Owner" />
+                <Form.Label>Author</Form.Label>
+                <Form.Control type="text" placeholder="Who is the author?" />
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Decription of Item</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Label>Description</Form.Label>
+                <Form.Control as="textarea" rows={4} />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
-                Add
+            <Button variant="dark" type="submit">
+                Order
             </Button>
         </Form>
     );
